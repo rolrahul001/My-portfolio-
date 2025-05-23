@@ -1,83 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <!-- Google tag (gtag.js) -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NKC2P5GXL5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rahul Barman Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-  gtag('config', 'G-NKC2P5GXL5');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul's Portfolio</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-    </style>
+    body {
+      background: #f4f4f4;
+      padding: 15px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px 15px;
+      text-align: center;
+    }
+
+    .section {
+      padding: 15px 20px;
+    }
+
+    .section:nth-child(even) {
+      background-color: #f0f8ff;
+    }
+
+    h2 {
+      margin-bottom: 8px;
+      color: #007BFF;
+    }
+
+    .contact, .skills, .projects, .certs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .card {
+      flex: 1 1 250px;
+      background: #e8f0fe;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background: #fff;
+      color: #555;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .contact, .skills, .projects, .certs {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <div class="header">
+      <h1>Rahul Barman</h1>
+      <p>Full Stack Web Developer (Python)</p>
+    </div>
 
-    <h1>Rahul's Portfolio</h1>
+    <div class="section">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate Full Stack Web Developer with expertise in Python-based technologies. I build scalable and responsive web applications with clean code and intuitive UI. I enjoy solving real-world problems through code and continuously improving my skills.
+      </p>
+    </div>
 
-    <section>
-        <h2>About Me</h2>
-        <p>This is a brief description about Rahul, his interests, and his career goals.</p>
-    </section>
+    <div class="section">
+      <h2>Contact Information</h2>
+      <div class="contact">
+        <div class="card"><span class="bold">Email:</span> rolrahul001@gmail.com</div>
+        <div class="card"><span class="bold">Phone:</span> 6260894387</div>
+        <div class="card"><span class="bold">LinkedIn:</span> linkedin.com/in/rahul-barman-01aa1b2b4</div>
+        <div class="card"><span class="bold">GitHub:</span> github.com/rolrahul001</div>
+      </div>
+    </div>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor of  Science, APSU University (2019-2022)</li>
-            <li>High School Diploma, MODEL High School (2017)</li>
-        </ul>
-    </section>
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="card"><span class="bold">Languages:</span> HTML, CSS, JavaScript, Python, C++, Java</div>
+        <div class="card"><span class="bold">Tools:</span> VS Code, GitHub</div>
+        <div class="card"><span class="bold">Expertise:</span> Full Stack Development, REST APIs, Responsive Design</div>
+      </div>
+    </div>
 
-    <section>
-        <h2>Experience</h2>
-        <ul>
-            <li>Software Engineer Intern, Company A (2023-2024)</li>
-            <li>Freelance Web Developer (2022-Present)</li>
-        </ul>
-    </section>
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card"><span class="bold">Plant Disease Detection:</span> ML model using CNN to detect plant leaf diseases (Python + TensorFlow)</div>
+        <div class="card"><span class="bold">Image Compressor:</span> GUI app in Python Flask using pillow </div>
+        <div class="card"><span class="bold">Portfolio Website:</span> Responsive site using HTML, CSS, and JS</div>
+      </div>
+    </div>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, C++, JavaScript</li>
-            <li>Web Development: HTML, CSS, JavaScript, React</li>
-            <li>Databases: SQL, MongoDB</li>
-            <li>Tools: Git, GitHub</li>
-        </ul>
-    </section>
+    <div class="section">
+      <h2>Certifications</h2>
+      <div class="certs">
+        <div class="card">Python Basics – Coursera</div>
+        <div class="card">Data Collection and Processing with Python – Coursera</div>
+        <div class="card">Python Classes and Inheritance – Coursera</div>
+      </div>
+    </div>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://example.com/project1">Project 1</a> - A brief description of the project.</li>
-            <li><a href="https://example.com/project2">Project 2</a> - A brief description of the project.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>
-            Email: rolrahul001@gmail.com<br>
-            Phone: +91 6260894387<br>
-            LinkedIn: <a href="https://www.linkedin.com/in/rahulportfolio">LinkedIn Profile</a>
-        </p>
-    </section>
-
+    <div class="footer">
+      Looking forward to contributing to impactful projects and learning more every day.
+    </div>
+  </div>
 </body>
 </html>
